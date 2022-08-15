@@ -258,4 +258,3 @@ You are 15. You will be allowed to drive after 3 years.*/
 Enter number of years you live: 100
 You lived 3153600000 seconds.*/
 let user = prompt("enter number of years");
-let seconds= 
