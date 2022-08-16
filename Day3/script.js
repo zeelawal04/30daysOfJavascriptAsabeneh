@@ -210,15 +210,25 @@ alert(area_rectangle);
 /*Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.*/
 const pi = 3.14;
 let radius = prompt(radius);
-area = pi * radius * radius;
-let circumference = 2 * pi * radius;
+area = pi * r * r;
+let circumference = 2 * pi * r;
 alert(area);
 alert(circumference);
 
 //Calculate the slope, x-intercept and y-intercept of y = 2x -2
+x = prompt("Enter value for x");
+y = 2 * x - 2;
+alert(`the slope is ${y}`);
+
 /*Slope is m = (y2-y1)/(x2-x1). Find the slope between point (2, 2) and point(6,10)*/
+let m = 10 - 2 / (6 - 2);
+alert(m);
 //Compare the slope of above two questions.
+console.log(y == m);
 /*Calculate the value of y (y = x2 + 6x + 9). Try to use different x values and figure out at what x value y is 0.*/
+x = prompt("Enter value for x");
+y = x * x * 6 * x + 9;
+console.log(y);
 
 /*Writ a script that prompt a user to enter hours and rate per hour. Calculate pay of the person?
 Enter hours: 40
@@ -231,7 +241,9 @@ let earning = hours * rate;
 alert(earning);
 
 /*If the length of your name is greater than 7 say, your name is long else say your name is short.*/
-let j = damilola;
+
+let j = prompt("enter your name");
+let nameLength = name.length;
 
 /*Compare your first name length and your family name length and you should get this output.
 let firstName = 'Asabeneh'
