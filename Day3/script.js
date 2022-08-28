@@ -209,22 +209,21 @@ alert(area_rectangle);
 
 /*Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.*/
 const pi = 3.14;
-let radius = prompt(radius);
-area = pi * r * r;
-let circumference = 2 * pi * r;
+let radius = prompt("Enter radius");
+area = pi * radius * radius;
+let circumference = 2 * pi * radius;
 alert(area);
 alert(circumference);
 
 //Calculate the slope, x-intercept and y-intercept of y = 2x -2
-x = prompt("Enter value for x");
-y = 2 * x - 2;
-alert(`the slope is ${y}`);
-
+let slope = prompt("Enter value x");
+let k = 2 * x - 2;
+alert(`the slope is ${k}`);
 /*Slope is m = (y2-y1)/(x2-x1). Find the slope between point (2, 2) and point(6,10)*/
 let m = 10 - 2 / (6 - 2);
 alert(m);
 //Compare the slope of above two questions.
-console.log(y == m);
+console.log(k == m);
 /*Calculate the value of y (y = x2 + 6x + 9). Try to use different x values and figure out at what x value y is 0.*/
 x = prompt("Enter value for x");
 y = x * x * 6 * x + 9;
@@ -241,24 +240,26 @@ let earning = hours * rate;
 alert(earning);
 
 /*If the length of your name is greater than 7 say, your name is long else say your name is short.*/
-
-let j = prompt("enter your name");
-let nameLength = name.length;
+let name = prompt("Enter your name");
+let nameLength = name.Length;
+nameLength > 7 ? alert("your name is long") : alert("your name is short");
 
 /*Compare your first name length and your family name length and you should get this output.
 let firstName = 'Asabeneh'
 let lastName = 'Yetayeh*/
 let firstNamee = "zainab";
 let lastNam = "lawal";
-console.log(firstNamee.length);
-console.log(lastNam.length);
+console.log("firstNamee".length);
+console.log("lastNam".length);
 
 /*Declare two variables myAge and yourAge and assign them initial values and myAge and yourAge.
 let myAge = 250
 let yourAge = 25*/
 
 let myAge = 250;
-let yourage = 25;
+console.log(myAge);
+let yourAge = 25;
+console.log(yourAge);
 
 /*Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
 Enter birth year: 1995
@@ -266,6 +267,13 @@ You are 25. You are old enough to drive
 Enter birth year: 2005
 You are 15. You will be allowed to drive after 3 years.*/
 
+let userAge = prompt("Enter birth year");
+let ageDiff = 18 - userAge;
+if (userAge >= 18) {
+  console.log("you are old enough to drive");
+} else {
+  console.log(` wait for ${ageDiff} years`);
+}
 /*Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years
 Enter number of years you live: 100
 You lived 3153600000 seconds.*/
