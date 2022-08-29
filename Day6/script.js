@@ -81,11 +81,19 @@ for (let i = 0; i <= 10; i++) {
  8    64    512
  9    81    729
  10   100   1000*/
- for(let i=0; i <0;);
+for (let i = 0; i < 0; );
 
 //Use for loop to iterate from 0 to 100 and print only even numbers
+let evenSum = 0;
+for (let i = 0; i <= 100; i++);
+if (i % 2 == 0) {
+  evenSum = evenSum + i;
+}
+console.log(evenSum);
 
 //Use for loop to iterate from 0 to 100 and print only odd numbers
+let oddNum=0;
+for (let i=0)
 
 //Use for loop to iterate from 0 to 100 and print only prime numbers
 
@@ -98,7 +106,7 @@ for (let i = 0; i <= 10; i++) {
 
 //Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds. Print sum of evens and sum of odds as array
 
-  //[2550, 2500]
+//[2550, 2500]
 
 //Develop a small script which generate array of 5 random numbers
 
